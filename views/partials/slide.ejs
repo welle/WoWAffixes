@@ -14,15 +14,27 @@
                             <h2>
                                 <%= affixes[i].affixWeekTitle; %>
                             </h2>
-                            <p>(
-                                <%= moment(affixes[i].affixDate).format('DD MM YYYY'); %>)
+                            <p>
+                                (<%= moment(affixes[i].affixDate).format('DD MM YYYY'); %>)
                             </p>
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues[0] %>/" class="affixes affixes-<%= affixes[0].affixValues[0] %>"></a><br
-                            />
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues[1] %>/" class="affixes affixes-<%= affixes[0].affixValues[1] %>"></a><br
-                            />
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues[2] %>/" class="affixes affixes-<%= affixes[0].affixValues[2] %>"></a><br
-                            />
+                            <div class="affixes-table">
+                                <div>
+                                    <div>(+2) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues.level2 %>/" class="affixes affixes-<%= affixes[i].affixValues.level2 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+4) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues.level4 %>/" class="affixes affixes-<%= affixes[i].affixValues.level4 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+7) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues.level7 %>/" class="affixes affixes-<%= affixes[i].affixValues.level7 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+10) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i].affixValues.level10 %>/" class="affixes affixes-<%= affixes[i].affixValues.level10 %>"></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="caption-content" style="padding-top: 180px;text-align:left;">
@@ -30,15 +42,27 @@
                             <h2>
                                 <%= affixes[i+1].affixWeekTitle; %>
                             </h2>
-                            <p style="text-align:center;">(
-                                <%= moment(affixes[i+1].affixDate).format('DD MM YYYY'); %>)
+                            <p style="text-align:center;">
+                                (<%= moment(affixes[i+1].affixDate).format('DD MM YYYY'); %>)
                             </p>
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues[0] %>/" class="affixes affixes-<%= affixes[i+1].affixValues[0] %>"></a><br
-                            />
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues[1] %>/" class="affixes affixes-<%= affixes[i+1].affixValues[1] %>"></a><br
-                            />
-                            <a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues[2] %>/" class="affixes affixes-<%= affixes[i+1].affixValues[2] %>"></a><br
-                            />
+                            <div class="affixes-table">
+                                <div>
+                                    <div>(+2) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues.level2 %>/" class="affixes affixes-<%= affixes[i+1].affixValues.level2 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+4) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues.level4 %>/" class="affixes affixes-<%= affixes[i+1].affixValues.level4 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+7) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues.level7 %>/" class="affixes affixes-<%= affixes[i+1].affixValues.level7 %>"></a></div>
+                                </div>
+                                <div>
+                                    <div>(+10) </div>
+                                    <div><a href="http://fr.wowhead.com/affix=<%= affixes[i+1].affixValues.level10 %>/" class="affixes affixes-<%= affixes[i+1].affixValues.level10 %>"></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

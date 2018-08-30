@@ -453,36 +453,6 @@ h1.navbar-brand {
     height: 100%;
 }
 
-/* Default styles for background colors
-
-.btn-effect:after {
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    content: "";
-    position: absolute;
-    z-index: -1;
-
-    -webkit-transition: all 0.3s ease-out 0s;
-       -moz-transition: all 0.3s ease-out 0s;
-        -ms-transition: all 0.3s ease-out 0s;
-         -o-transition: all 0.3s ease-out 0s;
-            transition: all 0.3s ease-out 0s;
-}
-
-.btn-effect:hover,
-.btn-effect:active {
-    color: #0e83cd;
-}
-
-.btn-effect:hover:after,
-.btn-effect:active:after {
-    width: 100%;
-} */
-
-
 /* Project laughtbox setup */
 
 .fancybox-item.fancybox-close {
@@ -525,6 +495,24 @@ h1.navbar-brand {
 .affixes-12:before { background-image:url('../images/grievous.jpg');  }
 .affixes-13:before { background-image:url('../images/explosive.jpg');  }
 .affixes-14:before { background-image:url('../images/quaking.jpg');  }
+.affixes-15:before { background-image:url('../images/relentless.jpg');  }
+.affixes-16:before { background-image:url('../images/infested.jpg');  }
+/* .affixes-1:after {  content: " (+7) "; }
+.affixes-2:after {  content: " (+7) "; }
+.affixes-3:after {  content: " (+7) "; }
+.affixes-4:after {  content: " (+7) "; }
+.affixes-5:after {  content: " (+4) "; }
+.affixes-6:after {  content: " (+4) "; }
+.affixes-7:after {  content: " (+4) "; }
+.affixes-8:after {  content: " (+4) "; }
+.affixes-9:after {  content: " (+2) "; }
+.affixes-10:after {  content: " (+2) "; }
+.affixes-11:after {  content: " (+4) "; }
+.affixes-12:after {  content: " (+7) "; }
+.affixes-13:after {  content: " (+7) "; }
+.affixes-14:after {  content: " (+7) "; }
+.affixes-15:after {  content: " (+10) "; }
+.affixes-16:after {  content: " (+10) "; } */
 
 .affixes:before {
   border-radius:50%;
@@ -536,14 +524,23 @@ h1.navbar-brand {
   margin-right: 10px;
 }
 
-.affixes {
-    float: left;
-    color: #fff;
+.affixes-table {
+    display: table;
 }
 
-.affixes a:hover, a:focus {
-    color: #fff;
-    text-decoration: underline;
+.affixes-table>* {
+    display: table-row;
+}
+.affixes-table>*>* {
+    padding-right: 5px;
+    vertical-align: middle;
+    text-align: right;
+    display: table-cell;
+}
+
+.affixes {
+    float: left;
+    color: #ffd100;
 }
 
 .affix-display {
