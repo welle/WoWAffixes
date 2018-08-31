@@ -41,12 +41,12 @@ var affixesTurnLevel10 = [
 ];
 
 var affixWeekTitleTurn = [
-    'Current Week',
-    'Next Week',
-    '+2 Week',
-    '+3 Week',
-    '+4 Week',
-    '+5 Week'
+    'CURRENT_WEEK',
+    'NEXT_WEEK',
+    'PLUS_2_WEEK',
+    'PLUS_3_WEEK',
+    'PLUS_4_WEEK',
+    'PLUS_5_WEEK'
 ];
 
 function getWeekNumber(d) {

@@ -301,28 +301,6 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 
-.dropdown-menu {
-    -webkit-transition: all 0.8s ease 0s;
-       -moz-transition: all 0.8s ease 0s;
-        -ms-transition: all 0.8s ease 0s;
-         -o-transition: all 0.8s ease 0s;
-            transition: all 0.8s ease 0s;
-
-    background-color: rgba(0,0,0,.4);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 0;
-    text-align: right;
-    min-width: 100px;
-}
-
-.dropdown-menu a.dropdown-item  {
-    color: #fff;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding-right: 15px;
-}
-
-
 /*=================================================================
 	Home Slider
 ==================================================================*/

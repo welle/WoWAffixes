@@ -22,7 +22,7 @@ function random(low, high) {
 }
 
 exports.getFavicon = function () {
-    var index = Math.round(random(1,16));
+    var index = Math.round(random(0,15));
 
     return favicons[index];
 };

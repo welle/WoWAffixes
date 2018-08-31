@@ -23,80 +23,100 @@
 	<!--
         Fixed Navigation
 		==================================== -->
-		<%- include ../partials/navigation.ejs %>
-	<!--
+	<%- include ../partials/navigation.ejs %>
+		<!--
         End Fixed Navigation
         ==================================== -->
 
-	<main class="site-content" role="main">
+		<main class="site-content" role="main">
 
-		<!--
+			<!--
         Home Slider
         ==================================== -->
 
-		<%- include ../partials/slide.ejs %>
+			<%- include ../partials/slide.ejs %>
 
-		<!--
+				<!--
         End Home SliderEnd
 		==================================== -->
 
-		<!-- Affixes section -->
-		<section id="affixes-info" class="parallax" style="background-image: none;">
-			<div class="overlay">
-				<div class="container">
-					<div class="row">
+				<!-- Affixes section -->
+				<section id="affixes-info" class="parallax" style="background-image: none;">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
 
-						<div class="sec-title text-center white wow animated fadeInDown">
-							<h2>FOLLOW US</h2>
-							<p>Beautifully simple follow buttons to help you get followers on</p>
+								<div class="sec-title text-center white wow animated fadeInDown">
+									<h2>FOLLOW US</h2>
+									<p>Beautifully simple follow buttons to help you get followers on</p>
+								</div>
+
+								<ul class="affixes-info-button">
+									<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+									<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+									<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end Affixes section -->
+
+
+				<footer id="footer">
+					<div class="container">
+						<div class="navbar-header">
+							<!-- responsive nav button -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
 						</div>
 
-						<ul class="affixes-info-button">
-							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
-						</ul>
-
+						<!-- main nav -->
+						<nav class="collapse navbar-collapse navbar-right" role="navigation">
+							<ul id="nav" class="nav navbar-nav" style="text-transform: uppercase;color: #fff;">
+								<li><a href="/?clang=en">en</a></li>
+								<li><a href="/?clang=fr">fr</a></li>
+							</ul>
+						</nav>
+						<div class="row text-center">
+							<div class="footer-content">
+								<p>Copyright &copy; 2018-<%= new Date().getFullYear() %> Design and Developed By <a href="https://github.com/welle/WoWAffixes">Akazukin</a></p>
+								<p>Based on <a href="http://www.themefisher.com">Themefisher</a></p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end Affixes section -->
+				</footer>
 
-
-		<footer id="footer">
-			<div class="container">
-				<div class="row text-center">
-					<div class="footer-content">
-						<p>Copyright &copy; 2014-2015 Design and Developed By<a href="http://www.themefisher.com">Themefisher</a> </p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Essential jQuery Plugins
+				<!-- Essential jQuery Plugins
 		================================================== -->
-		<!-- Main jQuery -->
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Twitter Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Single Page Nav -->
-		<script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-		<script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Owl Carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- jquery easing -->
-		<script src="js/jquery.easing.min.js"></script>
-		<!-- Fullscreen slider -->
-		<script src="js/jquery.slitslider.js"></script>
-		<script src="js/jquery.ba-cond.min.js"></script>
-		<!-- onscroll animation -->
-		<script src="js/wow.min.js"></script>
-		<!-- Custom Functions -->
-		<script src="js/main.js"></script>
-		<script>var whTooltips = { iconizeLinks: true, renameLinks: true };</script>
-		<script src="//wow.zamimg.com/widgets/power.js"></script>
+				<!-- Main jQuery -->
+				<script src="js/jquery-1.11.1.min.js"></script>
+				<!-- Twitter Bootstrap -->
+				<script src="js/bootstrap.min.js"></script>
+				<!-- Single Page Nav -->
+				<script src="js/jquery.singlePageNav.min.js"></script>
+				<!-- jquery.fancybox.pack -->
+				<script src="js/jquery.fancybox.pack.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+				<!-- Owl Carousel -->
+				<script src="js/owl.carousel.min.js"></script>
+				<!-- jquery easing -->
+				<script src="js/jquery.easing.min.js"></script>
+				<!-- Fullscreen slider -->
+				<script src="js/jquery.slitslider.js"></script>
+				<script src="js/jquery.ba-cond.min.js"></script>
+				<!-- onscroll animation -->
+				<script src="js/wow.min.js"></script>
+				<!-- Custom Functions -->
+				<script src="js/main.js"></script>
+				<script>var whTooltips = { iconizeLinks: true, renameLinks: true };</script>
+				<script src="//wow.zamimg.com/widgets/power.js"></script>
 </body>
 
 </html>
