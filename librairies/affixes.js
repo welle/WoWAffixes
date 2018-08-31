@@ -1,3 +1,4 @@
+
 function Affixes(affixDate, affixValues, affixWeekTitle) {
     this.affixDate = affixDate;
     this.affixValues = affixValues;

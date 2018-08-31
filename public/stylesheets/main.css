@@ -481,22 +481,22 @@ h1.navbar-brand {
 	Affixes
 ==================================================================*/
 
-.affixes-1:before  { background-image:url('../images/overflowing.jpg'); }
-.affixes-2:before  { background-image:url('../images/skittish.jpg');  }
-.affixes-3:before  { background-image:url('../images/volcanic.jpg');  }
-.affixes-4:before  { background-image:url('../images/necrotic.jpg');  }
-.affixes-5:before  { background-image:url('../images/teeming.jpg');  }
-.affixes-6:before  { background-image:url('../images/raging.jpg');  }
-.affixes-7:before  { background-image:url('../images/bolstering.jpg');  }
-.affixes-8:before  { background-image:url('../images/sanguine.jpg');  }
-.affixes-9:before  { background-image:url('../images/tyrannical.jpg');  }
-.affixes-10:before { background-image:url('../images/fortified.jpg');  }
-.affixes-11:before { background-image:url('../images/bursting.jpg');  }
-.affixes-12:before { background-image:url('../images/grievous.jpg');  }
-.affixes-13:before { background-image:url('../images/explosive.jpg');  }
-.affixes-14:before { background-image:url('../images/quaking.jpg');  }
-.affixes-15:before { background-image:url('../images/relentless.jpg');  }
-.affixes-16:before { background-image:url('../images/infested.jpg');  }
+.affixes-1:before  { background-image:url('../images/affixes/overflowing.jpg'); }
+.affixes-2:before  { background-image:url('../images/affixes/skittish.jpg');  }
+.affixes-3:before  { background-image:url('../images/affixes/volcanic.jpg');  }
+.affixes-4:before  { background-image:url('../images/affixes/necrotic.jpg');  }
+.affixes-5:before  { background-image:url('../images/affixes/teeming.jpg');  }
+.affixes-6:before  { background-image:url('../images/affixes/raging.jpg');  }
+.affixes-7:before  { background-image:url('../images/affixes/bolstering.jpg');  }
+.affixes-8:before  { background-image:url('../images/affixes/sanguine.jpg');  }
+.affixes-9:before  { background-image:url('../images/affixes/tyrannical.jpg');  }
+.affixes-10:before { background-image:url('../images/affixes/fortified.jpg');  }
+.affixes-11:before { background-image:url('../images/affixes/bursting.jpg');  }
+.affixes-12:before { background-image:url('../images/affixes/grievous.jpg');  }
+.affixes-13:before { background-image:url('../images/affixes/explosive.jpg');  }
+.affixes-14:before { background-image:url('../images/affixes/quaking.jpg');  }
+.affixes-15:before { background-image:url('../images/affixes/relentless.jpg');  }
+.affixes-16:before { background-image:url('../images/affixes/infested.jpg');  }
 /* .affixes-1:after {  content: " (+7) "; }
 .affixes-2:after {  content: " (+7) "; }
 .affixes-3:after {  content: " (+7) "; }
