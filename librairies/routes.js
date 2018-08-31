@@ -10,7 +10,8 @@ function get404Url(req, res) {
   var affixesLib = require('./affixes');
   var moment = require('moment');
 
-  var lang = req.session.lang;
+  var lang = req.query.l;
+  console.log("404");
   res.render('pages/index', { affixes: affixesLib.getAffixes(), moment: moment })
 }
 
