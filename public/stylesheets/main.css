@@ -15,7 +15,6 @@
 /* =================================== */
 
 body {
-    background-image: url(./images/background.jpg);
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -477,6 +476,208 @@ h1.navbar-brand {
 }
 
 /*=================================================================
+	Affixes description
+==================================================================*/
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+.ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+}
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+}
+
+.ribbon-easy span {
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+}
+.ribbon-medium span {
+    background: #8F5408;
+    background: linear-gradient(#F79E05 0%, #8F5408 100%);
+}
+.ribbon-hard span {
+    background: #8F0808;
+    background: linear-gradient(#F70505 0%, #8F0808 100%);
+}
+.ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+}
+.ribbon-easy span::before {
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+.ribbon-medium span::before {
+    border-left: 3px solid #8F5408;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F5408;
+}
+.ribbon-hard span::before {
+    border-left: 3px solid #8F0808;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
+.ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+}
+.ribbon-easy span::after {
+    border-left: 3px solid transparent;
+    border-right: 3px solid #79A70A;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+.ribbon-medium span::after {
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F5408;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F5408;
+}
+.ribbon-hard span::after {
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F0808;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
+
+.affix-card-container{  
+    width:375px;
+    background-color:#1e1b26;
+    margin : 10px auto 0 auto;
+    box-shadow:5px 5px 115px -14px black;
+    border-radius: 4px;
+}
+
+h1.section-title{  
+    color:#FFFFFF;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.section-title{  
+    color:#FFFFFF;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.section-title-sub{  
+    color:rgba(255,255,255,.6);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.affix-card{
+    background-color: rgba(255,255,255,.05);
+    border: 2px solid rgba(255,255,255,.08);
+    position:relative;
+    background-size: contain;
+    background-size: cover;
+    z-index:1 !important;
+    width:375px;
+    display:block;
+    border-radius:4px;
+}
+.text-affix-cont{
+    padding:0px 12px;
+    text-align: justify;
+}
+.mr-grid { width: 100%; }
+    .mr-grid:before, .mr-grid:after { content: ""; display: table; }
+    .mr-grid:after { clear: both; }
+    .mr-grid { *zoom: 1; }
+
+h1.title-affix {
+    color: #FFFFFF !important;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+h1.title-affix-1:before  { background-image:url('../images/affixes/overflowing-big.jpg'); }
+h1.title-affix-2:before  { background-image:url('../images/affixes/skittish-big.jpg');  }
+h1.title-affix-3:before  { background-image:url('../images/affixes/volcanic-big.jpg');  }
+h1.title-affix-4:before  { background-image:url('../images/affixes/necrotic-big.jpg');  }
+h1.title-affix-5:before  { background-image:url('../images/affixes/teeming-big.jpg');  }
+h1.title-affix-6:before  { background-image:url('../images/affixes/raging-big.jpg');  }
+h1.title-affix-7:before  { background-image:url('../images/affixes/bolstering-big.jpg');  }
+h1.title-affix-8:before  { background-image:url('../images/affixes/sanguine-big.jpg');  }
+h1.title-affix-9:before  { background-image:url('../images/affixes/tyrannical-big.jpg');  }
+h1.title-affix-10:before { background-image:url('../images/affixes/fortified-big.jpg');  }
+h1.title-affix-11:before { background-image:url('../images/affixes/bursting-big.jpg');  }
+h1.title-affix-12:before { background-image:url('../images/affixes/grievous-big.jpg');  }
+h1.title-affix-13:before { background-image:url('../images/affixes/explosive-big.jpg');  }
+h1.title-affix-14:before { background-image:url('../images/affixes/quaking-big.jpg');  }
+h1.title-affix-15:before { background-image:url('../images/affixes/relentless-big.jpg');  }
+h1.title-affix-16:before { background-image:url('../images/affixes/infested-big.jpg');  }
+
+h1.title-affix:before {
+    height: 40px;
+    border-radius:20%;
+    -webkit-border-radius: 20%;
+    padding-right: 40px;
+    content:'    ';
+    background-size: 40px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    border: 2px solid rgba(255,255,255,.08);
+}
+
+h2.title-affix {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #FFFFFF !important;
+}
+
+/* Columns match, minus margin sum. E.G. margin-left+margin-right=1%, col2=50%-1% - added padding:1%*/
+
+.col1 { width: 98%; height: auto; }
+.col1 { 
+	margin:0% 0.5% 0.5% 0.5%;
+    padding:1%;
+    float: left;
+    display: block;
+}
+.col2 { width: 98%; }
+.col2 { 
+	margin:0% 0.5% 0.5% 0.5%;
+    padding:1%;
+    float: left;
+    display: block;
+}
+
+
+/*=================================================================
 	Affixes
 ==================================================================*/
 
@@ -554,6 +755,11 @@ h1.navbar-brand {
 #affixes-info .overlay {
     background-color: #282a36;
     padding: 100px 0 120px;
+}
+
+#affixes-info .overlay2 {
+    background-color: #282a36;
+    padding: 0px 0 20px;
 }
 
 .affixes-info-button {

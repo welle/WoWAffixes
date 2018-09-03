@@ -1,0 +1,37 @@
+<% for(var i=0; i<affixesInfos.length; i++) { currentLevelOfAffix = affixesInfos[i] %>
+  <h2 class="section-title">
+      <%= translation.TITLE_LEVEL_AFFIXES.replace(/%s/g, currentLevelOfAffix.fromLevel) %>
+      </h2>
+  <h2 class="section-title-sub">
+      (<%= translation.TITLE_LEVEL_OCCUR.replace(/%s/g, currentLevelOfAffix.fromLevel) %>)
+      </h2>
+      <% for(var j=0; j<currentLevelOfAffix.affixes.length; j++) { currentAffixInfo = currentLevelOfAffix.affixes[j] %>
+        <div class="affix-card-container">
+          <div class="affix-card">
+            <div class="ribbon ribbon-<%= currentAffixInfo.difficulty %>"><span><%= currentAffixInfo.difficulty %></span></div>
+            <div class="text-affix-cont">
+              <div class="mr-grid">
+                <div class="col1">
+                  <h1 class="title-affix title-affix-2"><%= currentAffixInfo.name.toUpperCase(); %></h1>
+                </div>
+              </div>
+              <div class="mr-grid">
+                <div class="col1">
+                  <h2 class="title-affix"><%= translation.SUMMARY %></h2>
+                  <p class="affix-card-description">Non-bosses have more health and deal 30% more damage.</p>
+                </div>
+              </div>
+              <div class="mr-grid">
+                <div class="col2">
+                  <h2 class="title-affix"><%= translation.NOTE %></h2>
+                  <p class="affix-card-description">Interrupting and dodging any/all trash mob abilities becomes an
+                    absolute priority with this affix. Most of the time spent in the dungeon will be fighting beefy trash,
+                    don't be afraid to use CDs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <%  } %>
+<%  } %>

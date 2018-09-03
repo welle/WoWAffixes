@@ -1,0 +1,92 @@
+[
+    {
+        "fromLevel": 2,
+        "affixes": [
+            {
+                "id": 9,
+                "name": "Tyrannical",
+                "difficulty": "hard"
+            },
+            {
+                "id": 10,
+                "name": "Fortified",
+                "difficulty": "hard"
+            }
+        ]
+    },
+    {
+        "fromLevel": 4,
+        "affixes": [
+            {
+                "id": 7,
+                "name": "Bolstering",
+                "difficulty": "medium"
+            },
+            {
+                "id": 6,
+                "name": "Raging",
+                "difficulty": "medium"
+            },
+            {
+                "id": 8,
+                "name": "Sanguine",
+                "difficulty": "easy"
+            },
+            {
+                "id": 5,
+                "name": "Teeming",
+                "difficulty": "medium"
+            },
+            {
+                "id": 11,
+                "name": "Bursting",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "fromLevel": 7,
+        "affixes": [
+            {
+                "id": 4,
+                "name": "Necrotic",
+                "difficulty": "hard"
+            },
+            {
+                "id": 2,
+                "name": "Skittish",
+                "difficulty": "hard"
+            },
+            {
+                "id": 3,
+                "name": "Volcanic",
+                "difficulty": "easy"
+            },
+            {
+                "id": 13,
+                "name": "Explosive",
+                "difficulty": "medium"
+            },
+            {
+                "id": 14,
+                "name": "Quaking",
+                "difficulty": "medium"
+            },
+            {
+                "id": 12,
+                "name": "Grievous",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "fromLevel": 10,
+        "affixes": [
+            {
+                "id": 16,
+                "name": "Infested",
+                "difficulty": "hard"
+            }
+        ]
+    }
+]

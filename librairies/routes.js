@@ -3,7 +3,7 @@ function getRootUrl(req, res) {
   var moment = require('moment');
 
   var currentAffixes = affixesLib.getAffixes();
-  res.render('pages/index', { affixes: currentAffixes, moment: moment })
+  res.render('pages/index', { affixes: currentAffixes, affixesInfos: affixesLib.getAllAffixes(), moment: moment })
 }
 
 function get404Url(req, res) {

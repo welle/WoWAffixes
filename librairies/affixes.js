@@ -36,7 +36,7 @@ var affixesTurnLevel7 = [
 ];
 
 var affixesTurnLevel10 = [
-    15, // Relentless
+    //15, // Relentless
     16 // Infested
 ];
 
@@ -110,3 +110,9 @@ exports.getAffixes = function () {
 
     return functionResult;
 };
+
+exports.getAllAffixes = function () {
+    var allAffixes = require("../data/affixes.json");
+    
+    return allAffixes;
+}

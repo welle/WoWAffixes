@@ -1,4 +1,11 @@
 {
+    "TITLE_LEVEL_AFFIXES": "Level %s AFFIXES",
+    "SUMMARY": "Summary",
+    "NOTE": "Note",
+	"HARD": "Hard",
+	"MEDIUM": "Medium",
+	"EASY": "Easy",
+	"KEYSTONES": "Keystones",
 	"LANGUAGE": "Language",
     "THIS_WEEK": "This week",
     "CURRENT_WEEK": "Current week",

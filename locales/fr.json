@@ -1,4 +1,12 @@
 {
+    "TITLE_LEVEL_AFFIXES": "AFFIXES au niveau %s",
+    "TITLE_LEVEL_OCCUR": "Clés mythiques +%s",
+    "SUMMARY": "Résumé",
+    "NOTE": "Note",
+    "HARD": "Difficile",
+	"MEDIUM": "Moyen",
+	"EASY": "Facile",
+	"KEYSTONES": "Clés",
 	"LANGUAGE": "Langue",
     "THIS_WEEK": "Cette semaine",
     "CURRENT_WEEK": "Cette semaine",
