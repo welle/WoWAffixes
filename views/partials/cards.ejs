@@ -12,21 +12,19 @@
             <div class="text-affix-cont">
               <div class="mr-grid">
                 <div class="col1">
-                  <h1 class="title-affix title-affix-2"><%= currentAffixInfo.name.toUpperCase(); %></h1>
+                  <h1 class="title-affix title-affix-<%= currentAffixInfo.id %>"><%= currentAffixInfo.name.toUpperCase(); %></h1>
                 </div>
               </div>
               <div class="mr-grid">
                 <div class="col1">
                   <h2 class="title-affix"><%= translation.SUMMARY %></h2>
-                  <p class="affix-card-description">Non-bosses have more health and deal 30% more damage.</p>
+                  <p class="affix-card-description"><%= translation['AFFIX_DESC_' + currentAffixInfo.id] %></p>
                 </div>
               </div>
               <div class="mr-grid">
                 <div class="col2">
                   <h2 class="title-affix"><%= translation.NOTE %></h2>
-                  <p class="affix-card-description">Interrupting and dodging any/all trash mob abilities becomes an
-                    absolute priority with this affix. Most of the time spent in the dungeon will be fighting beefy trash,
-                    don't be afraid to use CDs.</p>
+                  <p id="affix-desc-id" class="affix-card-description"><%= translation['AFFIX_NOTE_' + currentAffixInfo.id] %></p>
                 </div>
               </div>
             </div>
