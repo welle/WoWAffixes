@@ -50,15 +50,10 @@ var affixWeekTitleTurn = [
 ];
 
 function getWeekNumber(d) {
-    // Copy date so don't modify original
     d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-    // Set to nearest Thursday: current date + 4 - current day number
-    // Make Sunday's day number 7
-    //d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-    // Get first day of year
     var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-    // Calculate full weeks to nearest Thursday
     var weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+    // TODO: adapt with start of rotation!
     return weekNo;
 }
 
@@ -82,15 +77,14 @@ function getClosestWednesday() {
 }
 
 function getAffixByWeek(weekNumber) {
-    var roundLevel2 = weekNumber % (affixesTurnLevel2.length);
-    var roundLevel4 = weekNumber % (affixesTurnLevel4.length);
-    var roundLevel7 = weekNumber % (affixesTurnLevel7.length);
-    var roundLevel10 = weekNumber % (affixesTurnLevel10.length);
+    weekNumber = weekNumber % 12;
 
-    var affixLevel2 = affixesTurnLevel2[roundLevel2];
-    var affixLevel4 = affixesTurnLevel4[roundLevel4];
-    var affixLevel7 = affixesTurnLevel7[roundLevel7];
-    var affixLevel10 = affixesTurnLevel10[roundLevel10];
+    var rotationAffixes = require("../data/rotation.json");
+    var weekRotation = rotationAffixes[weekNumber];
+    var affixLevel2 = weekRotation.affix1;
+    var affixLevel4 = weekRotation.affix2;
+    var affixLevel7 = weekRotation.affix3;
+    var affixLevel10 = affixesTurnLevel10[0];
 
     return new Affix(affixLevel2, affixLevel4, affixLevel7, affixLevel10);
 }
@@ -103,7 +97,7 @@ exports.getAffixes = function () {
     for (i = 0; i < 6; i++) {
         var affixDate = new Date(closestWednesday);
         affixDate.setDate(affixDate.getDate() + (i * 7));
-        var currentAffixes = getAffixByWeek((result + (i * 7)));
+        var currentAffixes = getAffixByWeek((result + i));
         var affix = new Affixes(affixDate, currentAffixes, affixWeekTitleTurn[i]);
         functionResult.push(affix);
     }
@@ -113,6 +107,6 @@ exports.getAffixes = function () {
 
 exports.getAllAffixes = function () {
     var allAffixes = require("../data/affixes.json");
-    
+
     return allAffixes;
 }
