@@ -589,10 +589,28 @@ h2.section-title-sub{
     text-align: center;
 }
 
+.column-affix {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row-affix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column-affix {
+        width: 100%;
+    }
+}
+
 .affix-card-container{  
-    width:375px;
+    width: 375px;
     margin : 10px auto 0 auto;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .affix-card{
