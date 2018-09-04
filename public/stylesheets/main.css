@@ -19,6 +19,11 @@ body {
     line-height: 24px;
     font-size: 16px;
     color: #818181;
+    background-color: #282a36;
+}
+
+.site-content {
+    padding-bottom: 50px;
 }
 
 figure, p, address {
@@ -1044,9 +1049,14 @@ ul.external li a:hover {
 ==============================================================*/
 
 #footer {
-    background-color: #2E2E2E;
-    padding: 70px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);;
+    padding: 5px 0;
     color: #fff;
+    text-align: center;
 }
 
 .footer-content {
@@ -1055,7 +1065,7 @@ ul.external li a:hover {
 }
 
 .footer-content > div {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .footer-content > div > p:first-child {
@@ -1063,90 +1073,8 @@ ul.external li a:hover {
     text-transform: uppercase;
 }
 
-.subscribe-form {
-    position: relative;
-}
-
-.subscribe.form-control {
-    background-color: transparent;
-    border: 1px solid #7f7f7f;
-}
-
-.subscribe.form-control:focus {
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
-}
-
-.submit-icon {
-    background-color: #7f7f7f;
-    border: 0 none;
-    border-radius: 0;
-    color: #c1c1c1;
-    padding: 13px 20px;
-    position: absolute;
-    overflow: hidden;
-    right: 0;
-    top: 0;
-}
-
-.submit-icon .fa-paper-plane {
-    position: relative;
-    top: 0;
-    
-    -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-         -o-transform: translateX(0);
-            transform: translateX(0);
-
-    -webkit-transition: all 0.3s ease 0.2s;
-       -moz-transition: all 0.3s ease 0.2s;
-        -ms-transition: all 0.3s ease 0.2s;
-         -o-transition: all 0.3s ease 0.2s;
-            transition: all 0.3s ease 0.2s;
-}
-
-.submit-icon:hover .fa-paper-plane {
-    position: relative;
-    top: -37px;
-    
-    -webkit-transform: translateX(30px);
-       -moz-transform: translateX(30px);
-        -ms-transform: translateX(30px);
-         -o-transform: translateX(30px);
-            transform: translateX(30px);
-}
-
 .footer-content .footer-social {
-    margin: 40px 0 35px;
-}
-
-.footer-social ul {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.footer-social ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer-social ul li a {
-    color: #7f7f7f;
-    display: block;
-    
-    -webkit-transition: all 0.2s ease 0s;
-       -moz-transition: all 0.2s ease 0s;
-        -ms-transition: all 0.2s ease 0s;
-         -o-transition: all 0.2s ease 0s;
-            transition: all 0.2s ease 0s;
-}
-
-.footer-social ul li a:hover {
-    color: #009EE3;
+    margin: 20px 0 15px;
 }
 
 .footer-content > p {
