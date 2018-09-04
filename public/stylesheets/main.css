@@ -26,6 +26,7 @@ body {
     padding-bottom: 50px;
 }
 
+
 figure, p, address {
     margin: 0;
 }
@@ -1303,14 +1304,10 @@ ul.external li a:hover {
         margin-bottom: 50px;
     }
 
-/* footer */
     .footer-content {
         width: 100%;
     }
 
-    .footer-social ul li {
-        margin: 0 7px;
-    }
 }
 
 
