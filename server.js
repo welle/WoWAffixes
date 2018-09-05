@@ -28,7 +28,7 @@ var app = express()
     textsVarName: 'translation'
   }))
   .use(express.static(path.join(__dirname, 'public')))
-  .use(favicon(path.join(__dirname, 'public', 'images/logo.png')))
+  .use(favicon(path.join(__dirname, 'public', 'images/favicon.png')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => routesLib.getRoutes(req, res, i18n));
