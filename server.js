@@ -6,11 +6,11 @@ var cookieSession = require('cookie-session'),
   i18n = require("i18n-express"),
   favicon = require('serve-favicon'),
   Keygrip = require('keygrip'),
-  faviconLib = require('./librairies/favicon'),
+  //faviconLib = require('./librairies/favicon'),
   routesLib = require('./librairies/routes');
 
 var expiryDate = new Date(Date.now() + 365 * 60 * 60 * 1000); // 365 days
-var randomFavicon = faviconLib.getFavicon();
+//var randomFavicon = faviconLib.getFavicon();
 var app = express()
   .set('trust proxy', 1)
   .use(cookieSession({
@@ -28,7 +28,7 @@ var app = express()
     textsVarName: 'translation'
   }))
   .use(express.static(path.join(__dirname, 'public')))
-  .use(favicon(path.join(__dirname, 'public', 'images/affixes/' + randomFavicon)))
+  .use(favicon(path.join(__dirname, 'public', 'images/logo.png')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => routesLib.getRoutes(req, res, i18n));
