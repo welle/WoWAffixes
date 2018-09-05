@@ -156,6 +156,7 @@
 
 .bg-img-1 {
 	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9)), url(../images/background.jpg);
+	background-attachment: fixed;
 }
 
 /* Animations for content elements */
