@@ -633,6 +633,23 @@ h2.section-title-sub{
 .affix-card:hover .ribbon {
     display: block;
 }
+.affix-card:hover .moreButton {
+    display: none;
+}
+.affix-card:hover .col2 {
+    display: block;
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+}
+
+@-webkit-keyframes slide-down {
+    0% { opacity: 0; -webkit-transform: translateY(-50%); }   
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+    0% { opacity: 0; -moz-transform: translateY(-50%); }   
+  100% { opacity: 1; -moz-transform: translateY(0); }
+}
 
 .affix-card:hover {
     box-shadow:5px 5px 115px -14px black;
@@ -706,7 +723,7 @@ h2.title-affix {
 	margin:0% 0.5% 0.5% 0.5%;
     padding:1%;
     float: left;
-    display: block;
+    display: none;
 }
 
 
@@ -1081,6 +1098,17 @@ ul.external li a:hover {
 .footer-content > p {
     color: #ababab;
     font-size: 12px;
+}
+
+.footer-content *> a {
+    color: #fff;;
+    font-size: 12px;
+}
+
+.footer-content *>li *> a {
+    color: #fff;;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 
