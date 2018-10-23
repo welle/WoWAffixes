@@ -13,9 +13,6 @@ cache:
     - "node_modules"
 addons:
   sonarcloud:
-    projectKey="welle_WoWAffixes"
-    sources="."
-    host.url="https://sonarcloud.io"
     organization: "welle-github" # the key of the org you chose at step #3
     token:
       secure: $SONAR_KEY_VALUE # encrypted value of your token
