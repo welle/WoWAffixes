@@ -1,4 +1,4 @@
-# wow-affixes [![Build Status](https://travis-ci.org/welle/WoWAffixes.svg?branch=master)](https://travis-ci.org/welle/WoWAffixes) [![quality gate](https://sonarcloud.io/api/project_badges/measure?project=welle_WoWAffixes&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=welle_WoWAffixes&metric=alert_status) #
+# wow-affixes [![Build Status](https://travis-ci.org/welle/WoWAffixes.svg?branch=master)](https://travis-ci.org/welle/WoWAffixes) [![quality gate](https://sonarcloud.io/api/project_badges/measure?project=welle_WoWAffixes&metric=alert_status)](https://sonarcloud.io/dashboard?id=welle_WoWAffixes) #
 
 ## Quick summary ##
 
