@@ -1,5 +1,7 @@
 language: node_js
 sudo: required
+before_install:
+  - npm install
 install: true
 node_js:
   - "iojs"
@@ -15,3 +17,9 @@ addons:
 cache:
   directories:
     - '$HOME/.sonar/cache'
+    - "node_modules"
+deploy:
+  provider: heroku
+  app: wowaffixes
+  api_key:
+    secure: "$THE_HEROKU_API_KEY_VALUE"
