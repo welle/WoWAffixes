@@ -81,6 +81,13 @@ $(function () {
 
 $(document).ready(function () {
 
+    $(".card").each(function () {
+        var card = this;
+        card.addEventListener( 'click', function() {
+            card.classList.toggle('is-flipped');
+        });
+    })
+
     $("p#affix-desc-id").each(function () {
         var $sc = $(this),
             $lis = $sc.text(),

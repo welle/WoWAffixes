@@ -628,10 +628,12 @@ h2.section-title-sub{
     width:375px;
     display:block;
     border-radius:2px;
-    border:2px solid rgba(255,255,255,.0)
+    box-shadow:5px 5px 115px -14px black;
+    border: 2px solid rgba(255,255,255,.08);
+    background-color: rgba(255,255,255,.05);
 }
 
-.affix-card:hover .ribbon {
+.affix-card .ribbon {
     display: block;
 }
 /* .affix-card:hover .moreButton {
@@ -651,12 +653,6 @@ h2.section-title-sub{
     0% { opacity: 0; -moz-transform: translateY(-50%); }   
   100% { opacity: 1; -moz-transform: translateY(0); }
 } */
-
-.affix-card:hover {
-    box-shadow:5px 5px 115px -14px black;
-    border: 2px solid rgba(255,255,255,.08);
-    background-color: rgba(255,255,255,.05);
-}
 
 .text-affix-cont{
     padding:0px 12px;
@@ -766,6 +762,24 @@ h2.title-affix {
 .affixes-15:after {  content: " (+10) "; }
 .affixes-16:after {  content: " (+10) "; } */
 
+.card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
 .affixes:before {
   border-radius:50%;
   -webkit-border-radius: 50%;
@@ -812,42 +826,6 @@ h2.title-affix {
 #affixes-info .overlay2 {
     background-color: #282a36;
     padding: 0px 0 20px;
-}
-
-.affixes-info-button {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.affixes-info-button li {
-    display: inline-block;
-}
-
-.affixes-info-button li:nth-child(2) {
-    margin: 0 75px;
-}
-
-.affixes-info-button li a {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    display: block;
-    height: 90px;
-    line-height: 96px;
-    width: 90px;
-    
-    -webkit-transition: all 0.2s ease 0s;
-       -moz-transition: all 0.2s ease 0s;
-        -ms-transition: all 0.2s ease 0s;
-         -o-transition: all 0.2s ease 0s;
-            transition: all 0.2s ease 0s;
-}
-
-.affixes-info-button li a:hover {
-    color: #008ECC;
-    border: 2px solid #008ECC;
 }
 
 /*=================================================================
