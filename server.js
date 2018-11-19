@@ -11,7 +11,7 @@ var cookieSession = require('cookie-session'),
 
 var expiryDate = new Date(Date.now() + 365 * 60 * 60 * 1000); // 365 days
 //var randomFavicon = faviconLib.getFavicon();
-var app = express()
+var server = express()
   .set('trust proxy', 1)
   .use(cookieSession({
     name: 'session',
@@ -33,4 +33,14 @@ var app = express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => routesLib.getRoutes(req, res, i18n));
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+exports.listen = function(port) {
+	console.log('Listening on: ' + port);
+	server.listen(port);
+};
+
+// close destroys the server.
+exports.close = function() {
+	server.close();
+};
+
+this.listen(PORT);

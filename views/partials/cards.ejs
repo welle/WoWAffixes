@@ -1,59 +1,91 @@
 <% for(var i=0; i<affixesInfos.length; i++) { currentLevelOfAffix = affixesInfos[i] %>
-  <h2 class="section-title">
-    <%= translation.TITLE_LEVEL_AFFIXES.replace(/%s/g, currentLevelOfAffix.fromLevel) %>
-  </h2>
-  <h2 class="section-title-sub">
-    (
-    <%= translation.TITLE_LEVEL_OCCUR.replace(/%s/g, currentLevelOfAffix.fromLevel) %>)
-  </h2>
-    <% for(var j=0; j<currentLevelOfAffix.affixes.length; ) { currentAffixInfo = currentLevelOfAffix.affixes[j]; %>
-      <div class="row-affix">
-        <div class="column-affix">
-          <div class="affix-card-container">
-            <div class="affix-card">
-              <div class="ribbon ribbon-<%= currentAffixInfo.difficulty %>"><span><%= currentAffixInfo.difficulty %></span></div>
-              <div class="card">
-                <div class="card__face card__face--front">
-                    <div class="text-affix-cont">
-                      <div class="mr-grid">
-                        <div class="col1">
-                          <h1 class="title-affix title-affix-<%= currentAffixInfo.id %>">
-                            <%= currentAffixInfo.name.toUpperCase(); %>
-                          </h1>
-                        </div>
-                      </div>
-                      <div class="mr-grid">
-                        <div class="col1">
-                          <h2 class="title-affix">
-                            <%= translation.SUMMARY %>
-                          </h2>
-                          <p class="affix-card-description">
-                            <%= translation['AFFIX_DESC_' + currentAffixInfo.id] %>
-                          </p>
-                          <img src="./images/glyphicons-218-circle-arrow-right.png"/>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <div class="card__face card__face--back">
-                  <div class="mr-grid">
-                    <div class="col1">
-                      <h2 class="title-affix">
-                        <%= translation.NOTE %>
-                      </h2>
-                      <p id="affix-desc-id" class="affix-card-description">
-                        <%= translation['AFFIX_NOTE_' + currentAffixInfo.id] %>
-                      </p>
-                    </div>
-                  </div>
-              </div>
+<h2 class="section-title">
+  <%= translation.TITLE_LEVEL_AFFIXES.replace(/%s/g, currentLevelOfAffix.fromLevel) %>
+</h2>
+<h2 class="section-title-sub">
+  (
+  <%= translation.TITLE_LEVEL_OCCUR.replace(/%s/g, currentLevelOfAffix.fromLevel) %>)
+</h2>
+<% for(var j=0; j<currentLevelOfAffix.affixes.length; ) { currentAffixInfo = currentLevelOfAffix.affixes[j]; %>
+<div class="row-affix">
+  <div class="column-affix">
+    <div class="affix-card-container">
+      <div class="affix-card">
+        <div class="ribbon ribbon-<%= currentAffixInfo.difficulty %>"><span>
+            <%= currentAffixInfo.difficulty %></span></div>
+        <div class="text-affix-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1 class="title-affix title-affix-<%= currentAffixInfo.id %>">
+                <%= currentAffixInfo.name.toUpperCase(); %>
+              </h1>
             </div>
           </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <h2 class="title-affix">
+                <%= translation.SUMMARY %>
+              </h2>
+              <p class="affix-card-description">
+                <%= translation['AFFIX_DESC_' + currentAffixInfo.id] %>
+              </p>
+            </div>
           </div>
-  <%  j++; currentAffixInfo = currentLevelOfAffix.affixes[j] %>
-      <%  if (currentAffixInfo) { %>
-      <% } %>
+          <div class="mr-grid">
+            <div class="col2">
+              <h2 class="title-affix">
+                <%= translation.NOTE %>
+              </h2>
+              <p id="affix-desc-id" class="affix-card-description">
+                <%= translation['AFFIX_NOTE_' + currentAffixInfo.id] %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <% j++; } %>
-  
-  <%  } %>
+  </div>
+  <%  j++; currentAffixInfo = currentLevelOfAffix.affixes[j] %>
+  <%  if (currentAffixInfo) { %>
+  <div class="column-affix">
+    <div class="affix-card-container">
+      <div class="affix-card">
+        <div class="ribbon ribbon-<%= currentAffixInfo.difficulty %>"><span>
+            <%= currentAffixInfo.difficulty %></span></div>
+        <div class="text-affix-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1 class="title-affix title-affix-<%= currentAffixInfo.id %>">
+                <%= currentAffixInfo.name.toUpperCase(); %>
+              </h1>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <h2 class="title-affix">
+                <%= translation.SUMMARY %>
+              </h2>
+              <p class="affix-card-description">
+                <%= translation['AFFIX_DESC_' + currentAffixInfo.id] %>
+              </p>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col2">
+              <h2 class="title-affix">
+                <%= translation.NOTE %>
+              </h2>
+              <p id="affix-desc-id" class="affix-card-description">
+                <%= translation['AFFIX_NOTE_' + currentAffixInfo.id] %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+<% j++; } %>
+
+<%  } %>
